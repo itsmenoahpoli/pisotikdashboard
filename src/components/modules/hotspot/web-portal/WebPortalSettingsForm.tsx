@@ -62,7 +62,7 @@ const COLUMNS: ColumnsType<TTableColumn> = [
 	{
 		dataIndex: "key",
 		title: "Actions",
-		render: (v) => {
+		render: () => {
 			return (
 				<Space direction="horizontal" size={5}>
 					<Button>

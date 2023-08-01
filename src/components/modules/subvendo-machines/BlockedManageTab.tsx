@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, Button } from 'antd'
+import { Table } from 'antd'
 import type { ColumnsType } from "antd/es/table";
 import { TableHeaderButtons } from "@/components/modules/subvendo-machines/blocked";
 

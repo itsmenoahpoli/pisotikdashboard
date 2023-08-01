@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Form, InputNumber, Row, Col, Button, Space } from "antd";
+import { Modal, Form, InputNumber, Row, Col } from "antd";
 
 type TRatesForm = {
 	show: boolean;

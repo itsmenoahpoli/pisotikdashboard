@@ -43,7 +43,7 @@ const COLUMNS: ColumnsType<TTableColumn> = [
 	{
 		dataIndex: 'id',
 		title: 'Action',
-		render: (v) => <Button type="primary">Manage</Button>
+		render: () => <Button type="primary">Manage</Button>
 	}
 ];
 

@@ -10,6 +10,7 @@ import {
 type TTableHeaderButtons = {};
 
 export const TableHeaderButtons: React.FC<TTableHeaderButtons> = (props) => {
+	console.log(props)
 	return (
 		<Space direction="horizontal" size={15}>
 			<Button>
