@@ -1,0 +1,31 @@
+.error-wrapper {
+	height: 100vh;
+	width: 100%;
+
+	&__header {
+		height: 80px;
+		width: 100%;
+		background-color: #fff;
+		border-bottom: solid 1px #edeae9;
+		box-shadow: 0 1px 4px 0 rgba(109, 110, 111, 0.08);
+	}
+
+	&__content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.card-container {
+			width: 700px;
+			margin-top: 80px;
+
+			.ant-card {
+				border-radius: 0;
+
+				&-body {
+					padding: 60px;
+				}
+			}
+		}
+	}
+}
