@@ -53,7 +53,7 @@ export const HotspotModule: React.FC = () => {
 	return (
 		<div className="hotspot-module">
 			<Card>
-				<Tabs defaultActiveKey="7" items={TAB_ITEMS} />
+				<Tabs defaultActiveKey="1" items={TAB_ITEMS} />
 			</Card>
 		</div>
 	);
