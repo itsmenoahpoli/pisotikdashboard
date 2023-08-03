@@ -22,7 +22,7 @@ const COLUMNS: ColumnsType<TTableColumn> = [
 	{
 		dataIndex: "password",
 		title: "Password",
-		render: (v) => {
+		render: () => {
 			return (
 				<Tag>
 					<IoEyeOutline />
