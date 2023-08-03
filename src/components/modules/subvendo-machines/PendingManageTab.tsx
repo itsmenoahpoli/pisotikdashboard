@@ -1,15 +1,15 @@
 import React from "react";
-import { Table, Button } from 'antd'
+import { Table, Button } from "antd";
 import type { ColumnsType } from "antd/es/table";
 import { TableHeaderButtons } from "@/components/modules/subvendo-machines/pending";
 
 type TTableColumn = {
 	key: React.Key;
-	name: string
-	mac: string
-	interface: string
-	connectivity: string
-	update_time: string
+	name: string;
+	mac: string;
+	interface: string;
+	connectivity: string;
+	update_time: string;
 };
 
 const COLUMNS: ColumnsType<TTableColumn> = [
@@ -35,10 +35,10 @@ const COLUMNS: ColumnsType<TTableColumn> = [
 		title: "Update Time",
 	},
 	{
-		dataIndex: 'id',
-		title: 'Action',
-		render: (v) => <Button type="primary">Manage</Button>
-	}
+		dataIndex: "id",
+		title: "Action",
+		render: () => <Button type="primary">Manage</Button>,
+	},
 ];
 
 const DATA: Array<TTableColumn> = [
@@ -63,13 +63,13 @@ export const PendingManageTab: React.FC = () => {
 				</div>
 			</div>
 			<div className="body">
-			<Table
-						rowSelection={{ type: "checkbox" }}
-						pagination={{ position: ["bottomRight"] }}
-						scroll={{ x: "max-content" }}
-						columns={COLUMNS}
-						dataSource={DATA}
-					/>
+				<Table
+					rowSelection={{ type: "checkbox" }}
+					pagination={{ position: ["bottomRight"] }}
+					scroll={{ x: "max-content" }}
+					columns={COLUMNS}
+					dataSource={DATA}
+				/>
 			</div>
 		</div>
 	);
