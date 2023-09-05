@@ -5,7 +5,7 @@ import { ROUTES } from "@/router";
 export const AppSidebar: React.FC = () => {
 	const location = useLocation();
 
-	const isActive = (path: string): Boolean => {
+	const isActive = (path: string): boolean => {
 		return location.pathname === path;
 	};
 

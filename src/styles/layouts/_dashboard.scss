@@ -92,6 +92,13 @@
 					border-bottom: solid 1px #f1f1f1;
 					justify-content: end;
 
+					.btn-mobile-nav {
+						display: none;
+						background-color: #001628;
+						color: #fff;
+						font-size: 16px !important;
+					}
+
 					.ant-avatar {
 						background-color: #f56901;
 					}
@@ -108,6 +115,42 @@
 				padding: 25px 35px;
 				zoom: 0.95;
 				margin-bottom: 200px !important;
+			}
+		}
+	}
+}
+
+.modal-mobile-nav {
+	a {
+		display: block !important;
+		font-size: 16px;
+		margin-bottom: 10px;
+		display: flex !important;
+		flex-direction: row;
+		align-items: center;
+		gap: 15px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.dashboard-wrapper {
+		&__sidebar {
+			display: none !important;
+		}
+
+		&__main {
+			margin-left: 0 !important;
+
+			&-page-content {
+				.app-header {
+					.main-nav {
+						justify-content: space-between;
+
+						.btn-mobile-nav {
+							display: block !important;
+						}
+					}
+				}
 			}
 		}
 	}
